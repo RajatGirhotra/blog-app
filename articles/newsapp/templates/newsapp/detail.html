@@ -1,0 +1,33 @@
+
+{% extends 'newsapp/base.html' %}
+
+
+{% block content %}
+
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            <a href="{{ request.META.HTTP_REFERER }}" class="buw3-border w3-border-blue" class>Home</a>
+                <div class="post">
+                    
+                        <h1> {{ article.headline }}</h1>
+					
+					
+                    <h2>{{ article.subtitle }}</a></h2>
+                    <h3>{{ article.text }}</h3>
+					
+					
+                </div>
+            
+			<div class="image">
+				<img src = "{{ article.image.url }}" class="center"/>
+			</div>
+        </div>
+    </div>
+</div>
+
+
+	
+
+
+{% endblock %}

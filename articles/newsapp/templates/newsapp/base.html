@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<html>
+    <head>
+		<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+		
+	   <link href = "{% static 'newsapp/style.css' %}" rel = "stylesheet">
+	    <title>The NewsApp</title>
+       
+	 
+    </head>
+    <body>
+      		
+
+        
+            <div>
+				{% block content %}
+			
+				{% endblock %}
+            </div>
+        
+    </body>
+</html>

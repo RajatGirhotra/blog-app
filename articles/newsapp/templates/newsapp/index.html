@@ -1,0 +1,17 @@
+{% extends 'newsapp/base.html' %}
+
+
+{% block content %}
+	<h1> Welcome to the News App </h1>
+
+	{{ article.headline }}
+	{% for article in object_list %}
+	<li>
+	
+		<h2><a href="{% url 'articles:detail' slug=article.slug %}" > {{ article.headline }} </a></h2>
+		<p> Date Published - {{ article.pub_date }}</p>
+
+	{% endfor %}
+</li>
+
+{% endblock %}
